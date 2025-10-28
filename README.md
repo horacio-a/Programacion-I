@@ -24,16 +24,16 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
 
 ## 📂 Estructura del proyecto
 
-app.py # Script principal con navegación
-secciones/
-├─ inicio.py # Página inicial
-├─ variables.py # Explicación y ejemplos de variables
-├─ lifetime.py # Ciclo de vida de las variables
-├─ mutabilidad.py # Tipos mutables e inmutables
-├─ staticvsdynamic.py # Tipado estático vs dinámico
-├─ scope.py # Alcance de variables + demo
-components/
-└─ code_and_run.py # Componente auxiliar para mostrar código + ejecución
+- **app.py** → Script principal con la navegación (sidebar + radio).  
+- **secciones/** → Módulos de cada sección teórica y práctica:  
+  - `inicio.py`: Página inicial con objetivo y explicación general.  
+  - `variables.py`: Explicación y ejemplos sobre variables.  
+  - `lifetime.py`: Ciclo de vida de una variable.  
+  - `mutabilidad.py`: Diferencias entre mutables e inmutables.  
+  - `staticvsdynamic.py`: Tipado estático vs dinámico.  
+  - `scope.py`: Alcance (scope) de variables + demo interactiva.  
+- **components/** → Componentes auxiliares reutilizables.  
+  - `code_and_run.py`: Muestra código junto con su ejecución en la app.  
 
 ---
 
