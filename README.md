@@ -41,7 +41,7 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
 
 1. Clonar el repositorio:
    git clone https://github.com/horacio-a/Programacion-I.git
-   cd tp-programacion-streamlit
+   cd /Programacion-I
 
 2. Crear y activar un entorno virtual (opcional, pero recomendado):
    python -m venv .venv
