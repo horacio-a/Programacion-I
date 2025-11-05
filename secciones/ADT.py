@@ -1,10 +1,10 @@
 import streamlit as st
 
 def run():
-    st.title("🧱 Tipos de Datos Abstractos (TDA)")
+    st.title("Tipos de Datos Abstractos (TDA)")
 
     # ======= TEORÍA =======
-    st.subheader("📘 ¿Qué es un Tipo de Dato Abstracto?")
+    st.subheader("¿Qué es un Tipo de Dato Abstracto?")
     st.markdown("""
 Un **Tipo de Dato Abstracto (TDA)** es un **modelo lógico** que define **qué operaciones se pueden realizar sobre un conjunto de datos**,  
 pero **sin especificar cómo se implementan internamente**.
@@ -26,7 +26,7 @@ Solo importa que **funcione como una pila** (último en entrar, primero en salir
     st.divider()
 
     # ======= DEMO INTERACTIVA =======
-    st.subheader("💻 Ejemplo interactivo: TDA Pila (Stack)")
+    st.subheader("Ejemplo interactivo: TDA Pila (Stack)")
 
     # Estado de la pila (simula los datos internos del TDA)
     if "pila" not in st.session_state:
