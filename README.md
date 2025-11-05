@@ -86,6 +86,12 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
    streamlit run app.py
 ```
 
+Si el comando anterior no funciona, probá con:
+
+```bash
+   python -m streamlit run app.py
+```
+
 5. Abrir el navegador en: http://localhost:8501
 
 ---
