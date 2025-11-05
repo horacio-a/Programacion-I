@@ -1,7 +1,7 @@
 import streamlit as st
 
 def run():
-    st.title("⚙️ Estructuras de Control")
+    st.title("Estructuras de Control")
 
     st.markdown("""
 En el **paradigma imperativo**, un programa se ejecuta normalmente en **secuencia**, línea por línea.  
