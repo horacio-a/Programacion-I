@@ -1,6 +1,6 @@
 import streamlit as st
 # from streamlit_ace import st_ace  # si lo usás en otras secciones
-from secciones import variables, lifetime, mutabilidad, staticvsdynamic, scope, inicio
+from secciones import Estructuas, goto, variables, lifetime, mutabilidad, staticvsdynamic, scope, inicio, modulos,ADT,generico
 # from secciones import paradigma  # si tenés módulo para “Paradigma imperativo”
 
 st.set_page_config(page_title="TP Programación", page_icon="🧪", layout="wide")
@@ -13,6 +13,11 @@ SECCIONES = [
     "Mutabilidad",
     "Static vs dynamic",
     "Scope",
+    "Módulos y encapsulamiento",
+    "Estructuras de control",
+    "Go To",
+    "Tipo generico",
+    "Tipos de datos abstractos",
 ]
 
 # ------------------ Estado de navegación sin pelear con el radio ------------------
@@ -58,6 +63,11 @@ combinando **explicaciones teóricas** con **demos interactivas**.
         ("Mutabilidad", "Diferencias entre tipos mutables/inmutables y efectos al pasar a funciones."),
         ("Static vs dynamic", "Tipado estático vs dinámico: diferencias y cuándo conviene cada uno."),
         ("Scope", "Alcance (LEGB) con demo interactiva: global, local y sombreado."),
+        ("Módulos y encapsulamiento", "Organización del código en archivos y protección del estado interno."),
+        ("Estructuras de control", "Condicionales, bucles, break/continue y manejo de errores en el flujo imperativo."),
+        ("Go To", "Qué es GOTO, por qué cayó en desuso y qué estructuras modernas lo reemplazan."),
+        ("Tipos genéricos", "Reutilización de código mediante funciones y clases parametrizadas por tipo."),
+        ("Tipos de datos abstractos", "Modelos lógicos de datos independientes de su implementación interna."),
     ]
 
     for nombre, desc in items:
@@ -91,3 +101,14 @@ elif page == "Static vs dynamic":
 
 elif page == "Scope":
     scope.run()
+
+elif page == "Tipo generico":
+    generico.run()
+elif page == "Módulos y encapsulamiento":
+    modulos.run()
+elif page == "Tipos de datos abstractos":
+    ADT.run()
+elif page == "Go To":
+    goto.run()
+elif page == "Estructuras de control":
+    Estructuas.run()
