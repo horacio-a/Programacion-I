@@ -38,7 +38,7 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
 ### `modulos/` → Paquete con módulos reales usados en las demos
 
 - **banco.py** → Ejemplo de módulo real con estado encapsulado (`_saldo`) y una API pública.
-- ****init**.py** → Indica que la carpeta es un paquete importable.
+- \***\*init**.py\*\* → Indica que la carpeta es un paquete importable.
 
 ---
 
@@ -60,19 +60,31 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
 ## 🚀 Cómo ejecutar el proyecto
 
 1. Clonar el repositorio:
+
+```bash
    git clone https://github.com/horacio-a/Programacion-I.git
    cd /Programacion-I
+```
 
 2. Crear y activar un entorno virtual (opcional, pero recomendado):
+
+```bash
    python -m venv .venv
-   source .venv/bin/activate # Linux/Mac
-   .venv\Scripts\activate # Windows
+   source .venv/bin/activate  # Linux/Mac
+   .venv\Scripts\activate  # Windows
+```
 
 3. Instalar dependencias:
+
+```bash
    pip install -r requirements.txt
+```
 
 4. Ejecutar la aplicación:
+
+```bash
    streamlit run app.py
+```
 
 5. Abrir el navegador en: http://localhost:8501
 
