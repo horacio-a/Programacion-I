@@ -24,16 +24,36 @@ Cada sección combina **teoría resumida** con **ejemplos prácticos interactivo
 
 ## 📂 Estructura del proyecto
 
-app.py # Script principal con navegación
-secciones/
-├─ inicio.py # Página inicial
-├─ variables.py # Explicación y ejemplos de variables
-├─ lifetime.py # Ciclo de vida de las variables
-├─ mutabilidad.py # Tipos mutables e inmutables
-├─ staticvsdynamic.py # Tipado estático vs dinámico
-├─ scope.py # Alcance de variables + demo
-components/
-└─ code_and_run.py # Componente auxiliar para mostrar código + ejecución
+- **app.py** → Archivo principal de la aplicación. Controla la navegación y el layout general.
+
+- **components.py** → Componentes auxiliares reutilizables.
+
+  - `code_and_run()`: Muestra fragmentos de código junto con su ejecución en la app.
+
+- **requirements.txt** → Dependencias del proyecto.
+- **README.md** → Documentación general del trabajo práctico.
+
+---
+
+### `modulos/` → Paquete con módulos reales usados en las demos
+
+- **banco.py** → Ejemplo de módulo real con estado encapsulado (`_saldo`) y una API pública.
+- ****init**.py** → Indica que la carpeta es un paquete importable.
+
+---
+
+### `secciones/` → Cada archivo representa una “página” o sección del TP
+
+- **inicio.py** → Página inicial: objetivos, introducción y navegación general.
+- **variables.py** → Definición, estructura interna y ejemplos de variables.
+- **lifetime.py** → Ciclo de vida de una variable: creación, uso y desasignación.
+- **mutabilidad.py** → Tipos mutables vs inmutables y ejemplos al pasar variables a funciones.
+- **staticvsdynamic.py** → Diferencias entre tipado estático y dinámico.
+- **scope.py** → Alcance de variables (LEGB) con demostraciones interactivas.
+- **modulos.py** → Explicación real de módulos y encapsulamiento usando `modulos/banco.py`.
+- **estructuas.py** → Estructuras de control: condicionales, bucles, break/continue, try/except.
+- **generico.py** → Tipos genéricos y funciones parametrizadas por tipo.
+- **ADT.py** → Tipos de Datos Abstractos (TDA/ADT): concepto e implementación.
 
 ---
 
@@ -41,7 +61,7 @@ components/
 
 1. Clonar el repositorio:
    git clone https://github.com/horacio-a/Programacion-I.git
-   cd tp-programacion-streamlit
+   cd /Programacion-I
 
 2. Crear y activar un entorno virtual (opcional, pero recomendado):
    python -m venv .venv
